@@ -5,11 +5,11 @@ const button = document.getElementById('registration');
 const dialog = document.getElementById('registration-dialog');
 if (/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
   button.textContent = 'WhatsApp арқылы жазылу';
-  document.getElementById('contact-note').textContent = 'Күні мен орнын ұйымдастырушыдан нақтылаңыз.';
+  document.getElementById('contact-note').textContent = 'Өтетін орнын ұйымдастырушыдан нақтылаңыз.';
 }
 button.addEventListener('click', () => {
   if (/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
-    const message = 'Сәлеметсіз бе! 7 000 теңгелік қазақ тіліндегі массаж мастер-классына жазылғым келеді. Күні мен өтетін орнын айта аласыз ба?';
+    const message = 'Сәлеметсіз бе! 10 қазанда сағат 16:00-де өтетін, қатысу құны 7 000 теңгелік қазақ тіліндегі массаж мастер-классына жазылғым келеді. Өтетін орнын айта аласыз ба?';
     window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
   } else {
     dialog.showModal();
