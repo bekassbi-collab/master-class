@@ -9,7 +9,7 @@ if (/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
 }
 button.addEventListener('click', () => {
   if (/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
-    const message = 'Сәлеметсіз бе! 10 қазанда сағат 16:00-де өтетін, қатысу құны 7 000 теңгелік қазақ тіліндегі массаж мастер-классына жазылғым келеді. Өтетін орнын айта аласыз ба?';
+    const message = 'Сәлеметсіз бе! 10 қазанда сағат 16:00-де өтетін, қазақ тіліндегі тегін массаж мастер-классына жазылғым келеді. Өтетін орнын айта аласыз ба?';
     window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
   } else {
     dialog.showModal();
